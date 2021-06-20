@@ -32,7 +32,7 @@ let imageArray = [
 
 function Images(name, src) {
   this.name = name;
-  this.src = `../img/assets/${src}`;
+  this.src = `img/assets/${src}`;
   this.views = 0;
   this.clicks = 0;
   Images.allImages.push(this);
