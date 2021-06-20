@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 960px;
+  display: grid;
+  grid-template-rows: 75px 1fr 50px;
+  margin: auto;
+  gap: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #555;
+  padding: 0 20px;
+}
+header h2 {
+  font-size: 32px;
+  font-weight: 600px;
+  color: #ededed;
+  font-family: 'Lobster', cursive;
+}
+header span {
+  color: #66de93;
+}
+header nav a {
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 22px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+header nav a:hover {
+  background: #ffeac9;
+  color: #222;
+}
+main Marquee {
+  font-size: 22px;
+  padding: 10px;
+  font-weight: 700;
+  font-family: 'Pacifico', cursive;
+}
+main section {
+  background: #cdf0ea;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 15px;
+  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* margin-bottom: 50px; */
+}
+main img {
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+  background-size: contain;
+  border: 1px solid #222;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main div {
+  position: relative;
+  background: #cdf0ea;
+}
+main div button {
+  position: relative;
+  top: 20px;
+  left: 40%;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 150px;
+  background: #66de93;
+  color: #333;
+  border: none;
+  font-size: 22px;
+  font-family: 'Pacifico', cursive;
+  padding: 5px;
+  cursor: pointer;
+}
+main div ul {
+  position: relative;
+  top: 20px;
+  left: 35%;
+  list-style: disc;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+main div ul li {
+  padding: 5px;
+}
+footer {
+  background: #333;
+  color: #fff;
+}
+footer h3 {
+  text-align: center;
+  margin-top: 30px;
+}
