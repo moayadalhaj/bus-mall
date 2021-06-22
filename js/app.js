@@ -94,10 +94,19 @@ function changeImages(event) {
     btn.textContent = 'View Results';
     viewResult.appendChild(btn);
   }
+  localStorage.setItem('data', JSON.stringify(Images.allImages));
 }
 
 displayImage.addEventListener('click', changeImages);
 render();
+
+function updateData() {
+  let allData = JSON.parse(localStorage.getItem('data'));
+  if (allData) {
+    Images.allImages = allData;
+  }
+}
+updateData();
 
 function results() {
   let list = document.createElement('ul');
@@ -111,7 +120,6 @@ function results() {
 }
 
 viewResult.addEventListener('click', results);
-
 function showChart() {
   let names = [];
   let views = [];
